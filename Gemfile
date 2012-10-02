@@ -47,7 +47,6 @@ group :development, :test do
   gem 'jasminerice'
   gem 'guard'
   gem 'guard-jasmine'
-  gem 'guard-coffeescript'
   gem 'guard-livereload'
   gem 'terminal-notifier-guard'
   gem 'rb-fsevent', '~> 0.9.1'

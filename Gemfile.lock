@@ -71,9 +71,6 @@ GEM
     guard (1.4.0)
       listen (>= 0.4.2)
       thor (>= 0.14.6)
-    guard-coffeescript (1.2.0)
-      coffee-script (>= 2.2.0)
-      guard (>= 1.1.0)
     guard-jasmine (1.8.3)
       childprocess
       guard (>= 1.1.0)
@@ -195,7 +192,6 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   guard
-  guard-coffeescript
   guard-jasmine
   guard-livereload
   jasmine
