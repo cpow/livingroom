@@ -1,6 +1,6 @@
 src_files:
   - assets/application.js
-
+  - public/javascripts/**/*.js
 
 stylesheets:
   - stylesheets/**/*.css
@@ -12,8 +12,6 @@ helpers:
 
 spec_files:
   - '**/*[sS]pec.js'
-  - '**/*[sS]pec.coffee'
-
 
 src_dir:
 
