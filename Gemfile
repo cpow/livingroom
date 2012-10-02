@@ -42,11 +42,13 @@ gem 'backbone-on-rails'
 
 group :development, :test do
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'capybara'
   gem 'jasmine'
   gem 'jasminerice'
   gem 'guard'
   gem 'guard-jasmine'
+  gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'terminal-notifier-guard'
   gem 'rb-fsevent', '~> 0.9.1'
