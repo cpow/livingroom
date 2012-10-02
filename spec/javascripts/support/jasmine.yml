@@ -12,9 +12,11 @@ helpers:
 
 spec_files:
   - '**/*[sS]pec.js'
+  - '**/*[sS]pec.coffee'
 
 
 src_dir:
 
 
 spec_dir: spec/javascripts
+
