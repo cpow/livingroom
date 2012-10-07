@@ -1,5 +1,3 @@
-#= require application
-
 describe "Livingroom.Models.RentalProperty:", ->
   it "should be defined", ->
     expect(Livingroom.Models.RentalProperty).toBeDefined()
@@ -9,5 +7,10 @@ describe "Livingroom.Models.RentalProperty:", ->
 
   describe "attributes", ->
     property = new Livingroom.Models.RentalProperty()
-    it "should have an address", ->
-      expect(property.attributes.address).toBeDefined()
+    it "should have address attributes", ->
+      expect(property.attributes.street1).toBeDefined()
+      expect(property.attributes.street2).toBeDefined()
+      expect(property.attributes.city).toBeDefined()
+      expect(property.attributes.state).toBeDefined()
+      expect(property.attributes.zip).toBeDefined()
+
