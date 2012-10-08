@@ -44,6 +44,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'jasmine'
   gem 'jasminerice'
   gem 'guard'

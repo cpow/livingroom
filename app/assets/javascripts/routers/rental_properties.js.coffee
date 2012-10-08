@@ -1,7 +1,7 @@
 class Livingroom.Routers.RentalProperties extends Backbone.Router
   routes:
     '': 'index'
-    'rentalproperties/:id': 'show'
+    'rental_properties/:id': 'show'
 
   index: ->
     view = new Livingroom.Views.RentalPropertiesIndex()
