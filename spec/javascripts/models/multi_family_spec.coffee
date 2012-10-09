@@ -28,3 +28,14 @@ describe "Livingroom.Models.MultiFamily:", ->
         it "should return url with the id", ->
           @multi_family.id = 1
           expect(@multi_family.url()).toEqual("/rental_properties/1")
+
+      describe "validations", ->
+        it "should not save when name is empty", ->
+          eventSpy = sinon.spy()
+          @multi_family.bind "error", eventSpy
+          @multi_family.save name: ""
+          expect(@eventSpy).toHaveBeenCalledOnce()
+          expect(@eventSpy).toHaveBeenCalledWith(
+            @multi_family,
+            "cannot have an empty name"
+            )

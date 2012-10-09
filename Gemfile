@@ -51,6 +51,8 @@ group :development, :test do
   gem 'guard-jasmine'
   gem 'guard-rspec'
   gem 'guard-livereload'
+  gem 'sinon-rails'
+  gem 'jasmine-sinon-rails'
   gem 'terminal-notifier-guard'
   gem 'rb-fsevent', '~> 0.9.1'
 end
