@@ -34,8 +34,8 @@ describe "Livingroom.Models.MultiFamily:", ->
           eventSpy = sinon.spy()
           @multi_family.bind "error", eventSpy
           @multi_family.save name: ""
-          expect(@eventSpy).toHaveBeenCalledOnce()
-          expect(@eventSpy).toHaveBeenCalledWith(
+          expect(eventSpy).toHaveBeenCalledOnce()
+          expect(eventSpy).toHaveBeenCalledWith(
             @multi_family,
-            "cannot have an empty name"
-            )
+            "cannot have an empty title"
+          )
