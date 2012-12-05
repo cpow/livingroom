@@ -1,3 +1,3 @@
 class Livingroom.Collections.RentalProperties extends Backbone.Collection
 
-  model: Livingroom.Models.MultiFamily
+  model: Livingroom.Models.RentalProperties
