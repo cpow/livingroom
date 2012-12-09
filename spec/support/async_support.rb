@@ -16,5 +16,5 @@ module AsyncSupport
 end
 
 RSpec.configure do |config|
-  config.include AsyncSupport, :type => :request
+  config.include AsyncSupport
 end

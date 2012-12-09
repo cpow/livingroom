@@ -15,8 +15,9 @@ describe Property do
     end
   end
 
-  describe "type" do
-    let(:property){FactoryGirl.build :property}
-    
+  describe ".property_type" do
+    let(:property){FactoryGirl.create :property}
+    specify{property.property_type.should be_valid}
+    specify{property.type.should eql("Multi Family")}
   end
 end
