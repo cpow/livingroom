@@ -1,4 +1,6 @@
 class Property
   include Mongoid::Document
-  field :type, type: String
+  field :name, type: String
+
+  validates :name, :presence => true
 end

@@ -13,10 +13,12 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'faker'
   gem 'capybara-webkit'
   gem 'jasmine'
   gem 'jasminerice'
