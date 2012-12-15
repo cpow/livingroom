@@ -1,0 +1,2 @@
+module LivingroomHelper
+end

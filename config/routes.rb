@@ -1,4 +1,10 @@
 Livingroom::Application.routes.draw do
+  devise_for :users
+
+  authenticated :user do
+    root :to => "livingroom#index"
+  end
+
   root to: "main#index"
 
   # The priority is based upon order of creation:

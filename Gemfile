@@ -4,6 +4,7 @@ gem 'rails', '3.2.8'
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 gem 'mongoid'
+gem 'devise'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
