@@ -22,7 +22,7 @@ describe "user sign in and sign up", js: true do
       end
     end
 
-    context "when a user signs in" do
+    context "when a user signs in", js: true do
       it "should show a list of properties" do
         user = FactoryGirl.create :user
         visit root_path
