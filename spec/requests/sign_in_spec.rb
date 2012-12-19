@@ -19,6 +19,7 @@ describe "user sign in and sign up", js: true do
         fill_in "Password confirmation", :with => user.password
         click_button "Sign up"
         eventually{page.should have_content("Something")}
+        page.should have_content("You have signed up successfully")
       end
     end
 
