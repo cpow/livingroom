@@ -5,6 +5,7 @@ FactoryGirl.define do
     city Faker::Address.city
     zip Faker::Address.zip_code
     state Faker::Address.state
-    after(:create){|p| p.property_type = FactoryGirl.create(:multi_family)}
+    after(:build){|p| p.property_type = FactoryGirl.create(:multi_family)}
+    after(:build){|p| p.user = FactoryGirl.create(:user)}
   end
 end
