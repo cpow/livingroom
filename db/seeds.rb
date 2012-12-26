@@ -27,13 +27,5 @@ Property.create(
     zip: Faker::Address.zip_code, 
     state: Faker::Address.state, 
     property_type: SingleFamily.create(),
-    user: User.first},
-
-  {name: "This is the second property with a long name and also is a multi family property"
-    address1: Faker::Address.street_address,
-    city: Faker::Address.city,
-    zip: Faker::Address.zip_code,
-    state: Faker::Address.state,
-    property_type: MultiFamily.create(),
     user: User.first}
 )
